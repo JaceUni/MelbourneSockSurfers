@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;    /* apply smooth scroll instead of instant 'jump' to anchor */
+}
+
+body {
+  margin: 0;      /* remove default border/gap around edge of page to allow greater control of spacing */
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, 'Verdana', 'Geneva', 'Tahoma', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;  /* remove underline from hyperlinks */
+  color: #333;
+}
+
+.sectionheading {
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.small-line {
+  width: 4rem;
+  height: 0.25rem;
+  background-color: #00889B;
+  margin: 0.75rem;
+}
+
+.anchor {       /* Apply gap to top of viewport when scrolling to anchor point via hyperlink click */
+  scroll-margin-top: 4.5rem;
+}
+
+.sectionWhite {     /* Set visual setting for all white-background sections */
+  background-color: white;
+  padding: 5rem 15%;
+}
+
+.sectionGrey {      /* Set visual setting for all grey-background sections */
+  background-color: #f0f0f0;
+  padding: 5rem 15%;
+}
+
+.sectionFull {      /* Set visual setting for sections that are full-width (ie, using an image that is full-width of the viewport) */
+  padding: 0;
+}
+

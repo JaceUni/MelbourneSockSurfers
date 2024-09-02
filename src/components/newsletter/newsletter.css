@@ -1,0 +1,6 @@
+.newsletter {
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: clamp(0.7rem, 0.9vw, 1rem);
+}
+
