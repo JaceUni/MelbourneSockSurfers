@@ -3,7 +3,7 @@ import './gameresults.css';
 
 function GameResults() {
   return (
-    <section className="gameresults">
+    <section className="sectionWhite">
       <a id="results" class="anchor"></a>
         <div class="small-line"></div>
         <div class="sectionheading">GAME RESULTS</div>

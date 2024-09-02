@@ -9,7 +9,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../media/TradingCards.jpg"); /* Image ref: Jeffrey Greenberg/Universal Images Group via Getty Images. (2024). Sports card collection [image]. Fanarch. Available at: https://fanarch.com/blogs/sports-cards/how-big-is-the-sports-card-industry (Accessed: 7 August 2024). Modified: Image cropped for use on webpage. */
+    background-image: url("../../assets/images/TradingCards.jpg"); /* Image ref: Jeffrey Greenberg/Universal Images Group via Getty Images. (2024). Sports card collection [image]. Fanarch. Available at: https://fanarch.com/blogs/sports-cards/how-big-is-the-sports-card-industry (Accessed: 7 August 2024). Modified: Image cropped for use on webpage. */
     opacity: 0.75;
 }
 
