@@ -9,15 +9,8 @@
     padding: 0.5rem 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    visibility: hidden;     /* hide initially because I want it to only appear when user scrolls below a specific point (below the navbar) */
     transition: opacity 0.3s ease, visibility 0.3s ease;    /* Animate the showing of the 'Top' button */
     transition: all 0.3s ease;
-}
-
-.returntotop.show {
-    opacity: 1;
-    visibility: visible;
 }
 
 .returntotop:hover {

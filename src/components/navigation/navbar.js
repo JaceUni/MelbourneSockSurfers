@@ -20,7 +20,7 @@ function Navbar() {
           <li><a href="#contact" dataContent="contact">Contact</a></li>
         </ul>
         <div className="search">Search&nbsp;
-          <form action="javascript:void(0);">
+          <form action="#">
             <input type="text" name="search" />
             <button type="submit">Search</button>
           </form>

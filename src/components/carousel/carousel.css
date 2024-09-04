@@ -1,4 +1,4 @@
-.carousel {
+.carouselgallery {
     width: 100%;
     max-width: 64rem;
     height: auto;
@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-.carousel-item {
+.carouselItem {
     flex: 0 0 100%;     /* Disable grow and shrink, and take up container's full width */
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@
     height: auto;
     object-fit: cover;      /* Ensure container is completely filled by image, maintaining aspect ratio */
     border-radius: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 figcaption {

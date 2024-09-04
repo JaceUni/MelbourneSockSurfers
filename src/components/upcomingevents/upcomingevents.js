@@ -3,7 +3,7 @@ import './upcomingevents.css';
 
 function UpcomingEvents() {
   return (
-    <section class="sectionGrey">
+    <section class="sectionGrey smallPadding1">
         <div class="small-line"></div>
         <div class="sectionheading">UPCOMING EVENTS</div>
         <a id="upcoming" class="anchor"></a>

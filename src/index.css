@@ -42,10 +42,9 @@ a {
 
 .sectionGrey {      /* Set visual setting for all grey-background sections */
   background-color: #f0f0f0;
-  padding: 5rem 15%;
+  padding: 3rem 15%;
 }
 
 .sectionFull {      /* Set visual setting for sections that are full-width (ie, using an image that is full-width of the viewport) */
   padding: 0;
 }
-

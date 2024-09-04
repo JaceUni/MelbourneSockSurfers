@@ -1,26 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './footer.css';
 
 function Footer() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupContent, setPopupContent] = useState('');
+
+  const handleLinkClick = (contentId) => {
+    event.preventDefault();   // This will stop the page from scrolling to the top when the <a> link is pressed.
+    const contentHtml = document.getElementById(contentId).innerHTML;
+    setPopupContent(contentHtml);
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setPopupContent('');
+  };
+
   return (
     <>
       <footer>
         <ul className="ulfooter">
-          <li className="lifooter"><a href="javascript:void(0);" dataContent="terms">TERMS OF USE</a></li>
-          <li className="lifooter"><a href="javascript:void(0);" dataContent="privacy">PRIVACY</a></li>
-          <li className="lifooter"><a href="javascript:void(0);" dataContent="careers">CAREERS</a></li>
-          <li className="lifooter"><a href="javascript:void(0);" dataContent="contact">CONTACT US</a></li>
+          <li className="lifooter">
+            <a href="#" onClick={() => handleLinkClick('terms')}>TERMS OF USE</a>
+          </li>
+          <li className="lifooter">
+            <a href="#" onClick={() => handleLinkClick('privacy')}>PRIVACY</a>
+          </li>
+          <li className="lifooter">
+            <a href="#" onClick={() => handleLinkClick('careers')}>CAREERS</a>
+          </li>
+          <li className="lifooter">
+            <a href="#" onClick={() => handleLinkClick('contact')}>CONTACT US</a>
+          </li>
         </ul>
         <div className="copyright">Copyright © 2024 Melbourne Sock Surfers</div>
       </footer>
 
-      <div id="popupOverlay" className="Overlay">
-        <div className="popupContent">
-          <div id="popupHTMLContent"></div>
-          <button id="closeButton">Close</button>
+      {showPopup && (
+        <div id="popupOverlay" className="Overlay" style={{ display: 'flex' }}>
+          <div className="popupContent">
+            <div dangerouslySetInnerHTML={{ __html: popupContent }}></div>
+            <button id="closeButton" onClick={closePopup}>Close</button>
+          </div>
         </div>
-      </div>
-      
+      )}
+
       <section id="terms" style={{ display: "none" }}>
         <p><strong>Terms of Use</strong></p>
         <p>By accessing or using the Melbourne Sock Surfers website, you agree to the following terms:</p>

@@ -3,9 +3,7 @@ import './returntotop.css';
 
 function ReturnToTop() {
   return (
-    <div className="returntotop">
-        <a href="#top"><div class="returntotop" id="returntotop">&uarr; Top</div></a>
-    </div>
+    <a href="#top"><div className="returntotop">Top</div></a>
   );
 }
 

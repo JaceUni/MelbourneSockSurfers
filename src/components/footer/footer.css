@@ -1,11 +1,11 @@
 footer {
     background-color: #77AABB;
-    height: 25rem;
+    height: 16rem;
     position: relative;
 }
 
 .footerlogo {
-    background-image: url("../../assets/images/logo.png");
+    background-image: url("../../../public/assets/images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 33%;

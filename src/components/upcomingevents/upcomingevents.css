@@ -13,3 +13,7 @@
 .date {
     font-weight: bold;
 }
+
+.smallPadding1 {
+    margin-bottom: 0;    /* To sit alongside sectionGrey between the map and weather, as existing padidng is too large gap */
+}
