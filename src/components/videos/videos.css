@@ -1,0 +1,30 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;      /* Apply 1rem space between each item */
+    flex-wrap: wrap;
+}
+
+.video-wrapper {
+    width: 18.75rem;
+    aspect-ratio: 16/9;     /* Apply aspect ratio 16:9 to each container */
+    background-color: black;
+    overflow: hidden;
+}
+
+.video, iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {     /* Apply alternate settings if viewport is <=768px wide */
+    .video-container {
+        flex-direction: column;
+    }
+
+    .video-wrapper {
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,159 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    z-index: 1000;      /* Set positioning in 3D space. Intention for this is to keep the navbar in front of other items (or to give other items the front view if required) */
+    position: sticky;   /* Allows the navbar to stick to the top of the viewport */
+    height: 2.5rem;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 0 1.5rem;
+    top: 0;
+}
+
+.navlink ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+}
+
+.navlink ul a:not(span):hover::after {  /* Apply these values to the <a> tags inside navbar's <ul> tags, as long as it isn't a <span> tag */
+    width: 100%;
+    left: 0;
+}
+
+.navlink li {
+    list-style-type: none;      /* Remove the bullet from the <li> tags */
+    line-height: 1.4rem;
+}
+
+.navlink li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+    position: relative;
+}
+
+.navlink li a::after {      /* This section adds a white line beneath the items on the navbar when hovered */
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;    /* Animate the white line instead of just appearing */
+}
+
+.navlink {      /* Set additional options specifically for navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 5rem;
+}
+
+.search {
+    display: inline-flex;
+    gap: 5px;
+    margin-left: auto;      /* Push the searchbox to the right end of the navbar */
+}
+
+.menubutton {
+    position: absolute;     /* Hamburger menu - ensure it is at the top-right corner of the viewport */
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+ 
+.menubutton .navline {      /* Draw the 3 lines of the hamburger menu button */
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.6rem;
+}
+
+@media (max-width: 768px) {     /* Apply alternate settings if viewport is <=768px wide */
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 0;
+        width: 1.1rem;
+        height: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: transparent;
+    }
+
+    .navlink {
+        font-size: 2rem;
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        z-index: 1001;
+        padding: 1rem 0;
+    }
+
+    .navlink.active {   /* 'active' class applied from javascript */
+        display: flex;
+    }
+
+    .navlink ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navlink li {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        background-color: #333;
+        padding-bottom: 3rem;
+    }
+
+    .navlink li a {
+        color: white;
+        padding: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .search {
+        display: none;      /* Hide searchbox on small screens, as navbar not present */
+    }
+
+    .menubutton {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background-color: #333;
+        padding: 1rem;
+        z-index: 1022; /* Ensure the button stays on top */
+    }
+}

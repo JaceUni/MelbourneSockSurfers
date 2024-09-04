@@ -1,0 +1,16 @@
+.weather {
+    text-align: center;
+    border: 1px solid #00889B;
+}
+
+.weatherapi {
+    margin: 2rem auto;      /* Apply margin: 2rem to top and bottom, and auto to left and right */
+}
+
+.date {
+    font-weight: bold;
+}
+
+.smallPadding2 {
+    margin-top: 0;
+}

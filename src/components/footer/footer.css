@@ -1,0 +1,89 @@
+footer {
+    background-color: #77AABB;
+    height: 16rem;
+    position: relative;
+}
+
+.footerlogo {
+    background-image: url("../../../public/assets/images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 50%;
+    background-position: center;
+}
+
+.ulfooter {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15%;
+    padding: 7rem 0;
+    align-items: center;
+}
+
+.lifooter {
+    border: 0px solid black;
+    width: 80%;
+    list-style-type: none;
+    text-align: center;
+    font-size: 0.8rem; /*clamp(0.7rem, 0.9vw, 1rem);*/
+}
+
+.copyright {
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.Overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupContent {
+    position: relative;
+    background-color: #fff;
+    padding: 1.3rem;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;   /* Apply maximum height and width, but also keeping size relative to viewport size */
+    overflow-y: auto;   /* Allow vertical scrollbar to be added if content exceeds height */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#closeButton {
+    background-color: #00889B;
+    color: #eee;
+    padding: 0.6rem 1.4rem;
+    border: 2px solid #fff;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: auto;
+    display: block;
+    margin-right: 0.2rem;
+}
+
+#closeButton:hover {
+    background-color: rgb(0, 171, 196);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {     /* Apply alternate settings if viewport is <=768px wide */
+    .ulfooter {
+        flex-direction: column;
+    }
+
+    .lifooter {
+        line-height: 2rem;
+    }
+}

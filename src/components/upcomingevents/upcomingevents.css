@@ -1,0 +1,19 @@
+.upcoming {
+    text-align: center;
+}
+
+.map {
+    margin: 2rem auto;      /* Apply margin: 2rem to top and bottom, and auto to left and right */
+    width: 640px;
+    height: 400px;
+    display: block;
+    border: none;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.smallPadding1 {
+    margin-bottom: 0;    /* To sit alongside sectionGrey between the map and weather, as existing padidng is too large gap */
+}

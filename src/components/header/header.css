@@ -1,0 +1,27 @@
+header {
+    height: 25rem;      /* Apply header height, with each 'rem' being the browser's default font size (usually 16px) */
+    display: flex;
+    justify-content: space-between;     /* Flex container control, distributes each child item with equal spacing */
+    align-items: center;
+    background-color: #00889B;
+    padding: 1.5rem;
+}
+
+.headtext {
+    width: 50%;
+    font-size: clamp(3rem, 4vw, 4rem);      /* Sets the font size based on the size of the viewport, providing a minimum, preferred, and maximum size. I didn't know about 'clamp' previously but found it in additional study.  */
+    font-weight: bolder;
+    text-align: center;
+    font-style: italic;
+    color: #222;
+}
+
+.logo {
+    background-image: url("../../../public/assets/images/logo.png");
+    background-size: contain;   /* Fit image in the provided space, keeping the aspect ratio */
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    background-position: center;
+}
+
