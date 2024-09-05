@@ -5,7 +5,7 @@ footer {
 }
 
 .footerlogo {
-    background-image: url("../../../public/assets/images/logo.png");
+    background-image: url("/assets/images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 33%;
