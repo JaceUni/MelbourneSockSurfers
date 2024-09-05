@@ -17,7 +17,7 @@ header {
 }
 
 .logo {
-    background-image: url("/assets/images/logo.png");
+    background-image: 'url(${process.env.PUBLIC_URL}/assets/images/logo.png)';      /* Couldn't get images to show so had to ask ChatGPT. It provided this fix.
     background-size: contain;   /* Fit image in the provided space, keeping the aspect ratio */
     background-repeat: no-repeat;
     width: 50%;

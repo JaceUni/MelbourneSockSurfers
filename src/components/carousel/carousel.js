@@ -19,20 +19,19 @@ function PhotoGallery() {
                         showStatus={false}  // Hides the status indicators (optional)
                     >
                         <div className="carouselItem">
-                            <img src="../../assets/images/carousel1.jpg" className="carousel-image" alt="Sliding at the international championships" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/carousel1.jpg`} className="carousel-image" alt="Sliding at the international championships" />       {/*} Couldn't get images to show so had to ask ChatGPT. It provided this fix. */}
                             <figcaption>Sliding at the international championships</figcaption>
                         </div>
                         <div className="carouselItem">
-                            <img src="../../assets/images/carousel2.jpg" className="carousel-image" alt="The 2024 championship team" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/carousel2.jpg`} className="carousel-image" alt="The 2024 championship team" />       {/*} Couldn't get images to show so had to ask ChatGPT. It provided this fix. */}
                             <figcaption>The 2024 championship team</figcaption>
                         </div>
                         <div className="carouselItem">
-                            <img src="../../assets/images/carousel3.jpg" alt="Getting ready to slide" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/carousel3.jpg`} className="carousel-image" alt="Getting ready to slide" />       {/*} Couldn't get images to show so had to ask ChatGPT. It provided this fix. */}
                             <figcaption>Getting ready to slide</figcaption>
                         </div>
                         <div className="carouselItem">
-                            <img src="../../assets/images/carousel4.jpg" alt="The first sliding team, dated 1856" />
-                            <figcaption>The first sliding team, dated 1856</figcaption>
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/carousel4.jpg`} className="carousel-image" alt="The first sliding team, dated 1856" />       {/*} Couldn't get images to show so had to ask ChatGPT. It provided this fix. */}
                         </div>
                     </Carousel>
                 </div>
