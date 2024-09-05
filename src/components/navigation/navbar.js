@@ -17,7 +17,6 @@ function Navbar() {
           <li><a href="#carousel">Gallery</a></li>
           <li><a href="#vid">Video</a></li>
           <li><a href="#newsletter">Newsletter</a></li>
-          <li><a href="#contact" dataContent="contact">Contact</a></li>
         </ul>
         <div className="search">Search&nbsp;
           <form action="#">

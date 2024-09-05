@@ -5,8 +5,8 @@ function Footer() {
   const [showPopup, setShowPopup] = useState(false);
   const [popupContent, setPopupContent] = useState('');
 
-  const handleLinkClick = (contentId) => {
-    event.preventDefault();   // This will stop the page from scrolling to the top when the <a> link is pressed.
+  const handleLinkClick = (event, contentId) => {
+    event.preventDefault(); // Stop the page from scrolling to the top when the <a> link is pressed.
     const contentHtml = document.getElementById(contentId).innerHTML;
     setPopupContent(contentHtml);
     setShowPopup(true);
@@ -22,16 +22,16 @@ function Footer() {
       <footer>
         <ul className="ulfooter">
           <li className="lifooter">
-            <a href="#" onClick={() => handleLinkClick('terms')}>TERMS OF USE</a>
+          <a href="#" onClick={(event) => handleLinkClick(event, 'terms')}>TERMS OF USE</a>
           </li>
           <li className="lifooter">
-            <a href="#" onClick={() => handleLinkClick('privacy')}>PRIVACY</a>
+            <a href="#" onClick={(event) => handleLinkClick('privacy')}>PRIVACY</a>
           </li>
           <li className="lifooter">
-            <a href="#" onClick={() => handleLinkClick('careers')}>CAREERS</a>
+            <a href="#" onClick={(event) => handleLinkClick('careers')}>CAREERS</a>
           </li>
           <li className="lifooter">
-            <a href="#" onClick={() => handleLinkClick('contact')}>CONTACT US</a>
+            <a href="#" onClick={(event) => handleLinkClick('contact')}>CONTACT US</a>
           </li>
         </ul>
         <div className="copyright">Copyright © 2024 Melbourne Sock Surfers</div>
