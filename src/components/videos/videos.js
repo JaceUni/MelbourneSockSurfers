@@ -19,10 +19,10 @@ function Videos() {
                 </video>
             </div>
             <div className="video-wrapper">
-                    <iframe className="video" src="https://www.youtube.com/embed/njv-lHx0C-E?start=4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe className="video" title="Sock Sliding Video" src="https://www.youtube.com/embed/njv-lHx0C-E?start=4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             <div className="video-wrapper">
-                    <iframe className="video" src="https://www.youtube.com/embed/hIeU6a9YBxM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe className="video" title="Sock Sliding Video" src="https://www.youtube.com/embed/hIeU6a9YBxM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         </div>
     </section>
