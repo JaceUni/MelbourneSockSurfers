@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/MelbourneSockSurfers/static/css/main.72237683.chunk.css",
+    "main.js": "/MelbourneSockSurfers/static/js/main.c9cec3a8.chunk.js",
+    "main.js.map": "/MelbourneSockSurfers/static/js/main.c9cec3a8.chunk.js.map",
+    "runtime~main.js": "/MelbourneSockSurfers/static/js/runtime~main.f4848f7d.js",
+    "runtime~main.js.map": "/MelbourneSockSurfers/static/js/runtime~main.f4848f7d.js.map",
+    "static/css/2.fe62fa80.chunk.css": "/MelbourneSockSurfers/static/css/2.fe62fa80.chunk.css",
+    "static/js/2.98a96277.chunk.js": "/MelbourneSockSurfers/static/js/2.98a96277.chunk.js",
+    "static/js/2.98a96277.chunk.js.map": "/MelbourneSockSurfers/static/js/2.98a96277.chunk.js.map",
+    "static/js/3.d3e4d6ea.chunk.js": "/MelbourneSockSurfers/static/js/3.d3e4d6ea.chunk.js",
+    "static/js/3.d3e4d6ea.chunk.js.map": "/MelbourneSockSurfers/static/js/3.d3e4d6ea.chunk.js.map",
+    "index.html": "/MelbourneSockSurfers/index.html",
+    "precache-manifest.78eaf7b6e1bd705e50fafbf98c163aab.js": "/MelbourneSockSurfers/precache-manifest.78eaf7b6e1bd705e50fafbf98c163aab.js",
+    "service-worker.js": "/MelbourneSockSurfers/service-worker.js",
+    "static/css/2.fe62fa80.chunk.css.map": "/MelbourneSockSurfers/static/css/2.fe62fa80.chunk.css.map",
+    "static/css/main.72237683.chunk.css.map": "/MelbourneSockSurfers/static/css/main.72237683.chunk.css.map"
+  }
+}
