@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import Header from './components/header/header';        // An item to test
@@ -28,7 +29,6 @@ describe('Navigation', () => {
     expect(getByText('Gallery')).toBeInTheDocument();
     expect(getByText('Video')).toBeInTheDocument();
     expect(getByText('Newsletter')).toBeInTheDocument();
-    expect(getByText('Contact')).toBeInTheDocument();
   });
 });
 

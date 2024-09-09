@@ -5,9 +5,26 @@ const apiKey = "606cabb43cfbaa8f9194285916e6e0f9";
 const city = "Gold Coast";
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric`;     // Create API URL including city and apiKey variables
 
+// ErrorBoundary requirement
+class ErrorBoundary extends React.Component {
+  state = { hasError: false };
+  static getDerivedStateFromError(error){ 
+    return { hasError: true };
+  }
+  componentDidCatch(error, errorInfo) {
+    errorService.log({error, errorInfo});
+  }
+  render() {
+    if (this.state.hasError) {
+      return <h1>Error when displaying weather details.</h1>;
+    }
+    return this.props.children;
+  }
+}
+
 function Weather() {
-  const [weatherData, setWeatherData] = useState(null);     // useState hook to store the fetched weather data
-  const [errorMessage, setErrorMessage] = useState('');     // useState hook to store any error messages
+  const [weatherData, setWeatherData] = useState(null);     // useState hook to store the fetched weather data (weather dashboard requirement)
+  const [errorMessage, setErrorMessage] = useState('');     // useState hook to store any error messages (error troubleshooting requirement)
 
   useEffect(() => {
     fetch(url)      // Get data from API URL...
@@ -28,17 +45,19 @@ function Weather() {
     <section className="sectionGrey smallPadding2">
       <div className="weather">
         <div className="weatherapi">
-          {weatherData ? (
-            <div>
-              <h3>Current Weather at {city}</h3>
-              <p>Temperature: {weatherData.main.temp.toFixed(1)}°C</p>
-              <p>Weather: {weatherData.weather[0].description}</p>
-              <p>Humidity: {weatherData.main.humidity}%</p>
-              <p>Wind Speed: {(weatherData.wind.speed * 3.6).toFixed(1)} km/h</p>   {/* Converting original m/s units to km/h */}
-            </div>
-          ) : (
-            <p>{errorMessage || 'Loading weather data...'}</p>
-          )}
+          <ErrorBoundary>
+            {weatherData ? (
+              <div>
+                <h3>Current Weather at {city}</h3>
+                <p>Temperature: {weatherData.main.temp.toFixed(1)}°C</p>
+                <p>Weather: {weatherData.weather[0].description}</p>
+                <p>Humidity: {weatherData.main.humidity}%</p>
+                <p>Wind Speed: {(weatherData.wind.speed * 3.6).toFixed(1)} km/h</p>   {/* Converting original m/s units to km/h */}
+              </div>
+            ) : (
+              <p>{errorMessage || 'Loading weather data...'}</p>
+            )}
+          </ErrorBoundary>
         </div>
       </div>
     </section>
