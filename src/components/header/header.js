@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../../assets/images/logo.png';    // Create variable called 'logo' that holds URL of image
+//import logo from '../../assets/images/logo.png';    // Create variable called 'logo' that holds URL of image
+import logo from `${process.env.PUBLIC_URL}/assets/images/logo.png`;    // Above line wouldn't show image on website, had to consult ChatGPT for resolution which provided this fix.
 import './header.css';
 
 function Header() {
