@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './newsletter.css';
 
 function Newsletter() {
-  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isSubscribed, setIsSubscribed] = useState(false);      // useState hook to track whether the user has subscribed or not
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event) => {     // handleSubmit is an arrow function that takes 'event' from the form submission and prevents the default behavior using the row below.
     event.preventDefault();     // Prevent the usual action of submitting the form (so now the page won't automatically refresh)...
     setIsSubscribed(true);      // ... and instead just show the "Thanks for subscribing" message.
   };

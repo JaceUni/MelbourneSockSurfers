@@ -3,26 +3,26 @@ import './weather.css';
 
 const apiKey = "606cabb43cfbaa8f9194285916e6e0f9";
 const city = "Gold Coast";
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${apiKey}&units=metric`;     // Create API URL including city and apiKey variables
 
 function Weather() {
-  const [weatherData, setWeatherData] = useState(null);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [weatherData, setWeatherData] = useState(null);     // useState hook to store the fetched weather data
+  const [errorMessage, setErrorMessage] = useState('');     // useState hook to store any error messages
 
   useEffect(() => {
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        if (data && data.main) {
-          setWeatherData(data);
+    fetch(url)      // Get data from API URL...
+      .then(response => response.json())    // ... and convert it to JSON.
+      .then(data => {   // create impromptu/arrow function.
+        if (data && data.main) {    // check if data is received and if it's valid...
+          setWeatherData(data);     // ... and if so then update the state with the fetched data.
         } else {
-          setErrorMessage('No weather data available.');
+          setErrorMessage('No weather data available.');    // Otherwise provide error message.
         }
       })
       .catch(error => {
-        setErrorMessage('Error fetching weather data.');
+        setErrorMessage('Error fetching weather data.');    // Additional error catching.
       });
-  }, []);
+  }, []);     // Empty array to ensure effect runs only once.
 
   return (
     <section className="sectionGrey smallPadding2">

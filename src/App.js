@@ -1,3 +1,4 @@
+// import all the components to be used for this page (referencing the .js file in each subfolder)
 import React from 'react';
 import Navbar from './components/navigation/navbar';
 import Header from './components/header/header';
@@ -14,6 +15,7 @@ import Footer from './components/footer/footer';
 function App() {
   return (
     <div className="App">
+      {/* Add each component to add to the page in order of its presence */}
       <Header />
       <Navbar />
       <ReturnToTop />

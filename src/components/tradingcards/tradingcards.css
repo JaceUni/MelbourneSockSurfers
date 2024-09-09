@@ -9,7 +9,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: 'url(${process.env.PUBLIC_URL}/assets/images/TradingCards.jpg)';      /* Couldn't get images to show so had to ask ChatGPT. It provided this fix. Image ref: Jeffrey Greenberg/Universal Images Group via Getty Images. (2024). Sports card collection [image]. Fanarch. Available at: https://fanarch.com/blogs/sports-cards/how-big-is-the-sports-card-industry (Accessed: 7 August 2024). Modified: Image cropped for use on webpage. */
     opacity: 0.75;
 }
 

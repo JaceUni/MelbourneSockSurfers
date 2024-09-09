@@ -4,7 +4,7 @@ import './navbar.css';
 function Navbar() {
   return (
     <nav className="nav">
-      <a href="javascript:void(0);" className="menubutton">
+      <a href="#" className="menubutton">
         <span className="navline"></span>
         <span className="navline"></span>
         <span className="navline"></span>
