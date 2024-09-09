@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/MelbourneSockSurfers/static/css/main.72237683.chunk.css",
-    "main.js": "/MelbourneSockSurfers/static/js/main.c9cec3a8.chunk.js",
-    "main.js.map": "/MelbourneSockSurfers/static/js/main.c9cec3a8.chunk.js.map",
-    "runtime~main.js": "/MelbourneSockSurfers/static/js/runtime~main.f4848f7d.js",
-    "runtime~main.js.map": "/MelbourneSockSurfers/static/js/runtime~main.f4848f7d.js.map",
+    "main.css": "/MelbourneSockSurfers/static/css/main.56ce2231.chunk.css",
+    "main.js": "/MelbourneSockSurfers/static/js/main.300640aa.chunk.js",
+    "main.js.map": "/MelbourneSockSurfers/static/js/main.300640aa.chunk.js.map",
+    "runtime~main.js": "/MelbourneSockSurfers/static/js/runtime~main.10705d2a.js",
+    "runtime~main.js.map": "/MelbourneSockSurfers/static/js/runtime~main.10705d2a.js.map",
     "static/css/2.fe62fa80.chunk.css": "/MelbourneSockSurfers/static/css/2.fe62fa80.chunk.css",
-    "static/js/2.98a96277.chunk.js": "/MelbourneSockSurfers/static/js/2.98a96277.chunk.js",
-    "static/js/2.98a96277.chunk.js.map": "/MelbourneSockSurfers/static/js/2.98a96277.chunk.js.map",
-    "static/js/3.d3e4d6ea.chunk.js": "/MelbourneSockSurfers/static/js/3.d3e4d6ea.chunk.js",
-    "static/js/3.d3e4d6ea.chunk.js.map": "/MelbourneSockSurfers/static/js/3.d3e4d6ea.chunk.js.map",
+    "static/js/2.d1e4df59.chunk.js": "/MelbourneSockSurfers/static/js/2.d1e4df59.chunk.js",
+    "static/js/2.d1e4df59.chunk.js.map": "/MelbourneSockSurfers/static/js/2.d1e4df59.chunk.js.map",
+    "static/js/3.b52b6af5.chunk.js": "/MelbourneSockSurfers/static/js/3.b52b6af5.chunk.js",
+    "static/js/3.b52b6af5.chunk.js.map": "/MelbourneSockSurfers/static/js/3.b52b6af5.chunk.js.map",
     "index.html": "/MelbourneSockSurfers/index.html",
-    "precache-manifest.78eaf7b6e1bd705e50fafbf98c163aab.js": "/MelbourneSockSurfers/precache-manifest.78eaf7b6e1bd705e50fafbf98c163aab.js",
+    "precache-manifest.4662a477d75cf91d9b2b0416838d60dc.js": "/MelbourneSockSurfers/precache-manifest.4662a477d75cf91d9b2b0416838d60dc.js",
     "service-worker.js": "/MelbourneSockSurfers/service-worker.js",
     "static/css/2.fe62fa80.chunk.css.map": "/MelbourneSockSurfers/static/css/2.fe62fa80.chunk.css.map",
-    "static/css/main.72237683.chunk.css.map": "/MelbourneSockSurfers/static/css/main.72237683.chunk.css.map"
+    "static/css/main.56ce2231.chunk.css.map": "/MelbourneSockSurfers/static/css/main.56ce2231.chunk.css.map",
+    "static/media/MelbourneSockSurfers.mp4": "/MelbourneSockSurfers/static/media/MelbourneSockSurfers.e09c2dbb.mp4",
+    "static/media/SockSliding.mp4": "/MelbourneSockSurfers/static/media/SockSliding.3f3e15b8.mp4",
+    "static/media/TradingCards.jpg": "/MelbourneSockSurfers/static/media/TradingCards.6baad68d.jpg",
+    "static/media/carousel1.jpg": "/MelbourneSockSurfers/static/media/carousel1.52b448e0.jpg",
+    "static/media/carousel2.jpg": "/MelbourneSockSurfers/static/media/carousel2.35bb9edb.jpg",
+    "static/media/carousel3.jpg": "/MelbourneSockSurfers/static/media/carousel3.3120522a.jpg",
+    "static/media/carousel4.jpg": "/MelbourneSockSurfers/static/media/carousel4.10106155.jpg",
+    "static/media/logo.png": "/MelbourneSockSurfers/static/media/logo.23e8aab2.png"
   }
 }
