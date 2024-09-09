@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MelbourneSockSurfers/precache-manifest.f04127eefbb48f9949d8ef5277fddd2a.js"
+  "/MelbourneSockSurfers/precache-manifest.927217729a33ef7dc62bd0133d512048.js"
 );
 
 self.addEventListener('message', (event) => {

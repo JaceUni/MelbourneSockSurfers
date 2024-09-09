@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9fe29ff183b231d809d94ae8673e5150",
+    "revision": "9974ac6ceea10f69f755743fd5b93392",
     "url": "/MelbourneSockSurfers/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MelbourneSockSurfers/static/css/2.fe62fa80.chunk.css"
   },
   {
-    "revision": "cdeeec8da6437635adcb",
+    "revision": "af0d03248e30003e70d4",
     "url": "/MelbourneSockSurfers/static/css/main.b366f670.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MelbourneSockSurfers/static/js/3.b52b6af5.chunk.js"
   },
   {
-    "revision": "cdeeec8da6437635adcb",
-    "url": "/MelbourneSockSurfers/static/js/main.94ea45bc.chunk.js"
+    "revision": "af0d03248e30003e70d4",
+    "url": "/MelbourneSockSurfers/static/js/main.3d2a5e62.chunk.js"
   },
   {
     "revision": "097e2734c6ac9a0314d8",
