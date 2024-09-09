@@ -7,16 +7,16 @@ function Footer({ userClicked }) {
       <footer>
         <ul className="ulfooter">
           <li className="lifooter">
-            <a href="#" onClick={(event) => userClicked(event, 'terms')}>TERMS OF USE</a>     {/* Event Listener 'onClick' with name 'event' */}
+            <a href="javascript:void(0);" onClick={(event) => userClicked(event, 'terms')}>TERMS OF USE</a>     {/* Event Listener 'onClick' with name 'event' */}
           </li>
           <li className="lifooter">
-            <a href="#" onClick={(event) => userClicked(event, 'privacy')}>PRIVACY</a>
+            <a href="javascript:void(0);" onClick={(event) => userClicked(event, 'privacy')}>PRIVACY</a>
           </li>
           <li className="lifooter">
-            <a href="#" onClick={(event) => userClicked(event, 'careers')}>CAREERS</a>
+            <a href="javascript:void(0);" onClick={(event) => userClicked(event, 'careers')}>CAREERS</a>
           </li>
           <li className="lifooter">
-            <a href="#" onClick={(event) => userClicked(event, 'contact')}>CONTACT US</a>
+            <a href="javascript:void(0);" onClick={(event) => userClicked(event, 'contact')}>CONTACT US</a>
           </li>
         </ul>
         <div className="copyright">Copyright © 2024 Melbourne Sock Surfers</div>
