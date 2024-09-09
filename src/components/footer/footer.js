@@ -22,7 +22,7 @@ function Footer({ userClicked }) {
         <div className="copyright">Copyright © 2024 Melbourne Sock Surfers</div>
       </footer>
 
-      <section id="terms">
+      <section id="terms" style={{ display: "none", maxWidth: "90%" }}>
         <p><strong>Terms of Use</strong></p>
         <p>By accessing or using the Melbourne Sock Surfers website, you agree to the following terms:</p>
         <p>All content is provided for informational and entertainment purposes. Unauthorized use of any materials, including copying or distribution, is prohibited.</p>
@@ -31,7 +31,7 @@ function Footer({ userClicked }) {
         <p>Thank you for visiting the Melbourne Sock Surfers website.</p>
       </section>
       
-      <section id="privacy">
+      <section id="privacy" style={{ display: "none", maxWidth: "90%" }}>
         <p><strong>Privacy Policy</strong></p>
         <p>Your privacy is important to us. This policy outlines how we collect, use, and protect your information.</p>
         <p>We may collect personal information such as names and email addresses when you interact with the site. This information is used solely for communication purposes and is not shared with third parties.</p>
@@ -41,7 +41,7 @@ function Footer({ userClicked }) {
         <p>If you have any questions about this policy, please contact us.</p>
       </section>
       
-      <section id="careers">
+      <section id="careers" style={{ display: "none", maxWidth: "90%" }}>
         <p><strong>Jobs & Careers</strong></p>
         <p>At Melbourne Sock Surfers, we're always looking for passionate and creative individuals to join our team. Whether you're an expert in sliding techniques or digital content creation, we'd love to hear from you.</p>
         <p>Current Opportunities:</p>
