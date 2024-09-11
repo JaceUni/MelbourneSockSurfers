@@ -3,7 +3,7 @@
 }
 
 .map {
-    margin: 2rem auto;      /* Apply margin: 2rem to top and bottom, and auto to left and right */
+    margin: 2rem auto 0 auto;      /* Apply margin: 2rem to top, zero to bottom, and auto to left and right */
     max-width: 640px;
     height: 400px;
     display: block;
